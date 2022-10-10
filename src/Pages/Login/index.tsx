@@ -36,17 +36,14 @@ const Login: FC = () => {
         };
 
     return (
-        <div className='max-h-full max-w-full '>
-            {/* Main div */}
+        <div className='max-h-full max-w-full'>
             <div className='flex max-w-3xl mx-auto rounded-xl space-x-4 mt-32 bg-slate-300'>
                 <div className='w-1/2'>
                     <img src={deskImage} className="w-full h-96" />
                 </div>
-                <div className='w-1/2 mt-8'>
-                    <div className="-ml-5 px-8">
-                        <Typography variant="h3" gutterBottom>
-                            Login
-                        </Typography>
+                <div className='w-1/2 mt-6'>
+                    <div className="-ml-5 px-8 py-2 text-5xl">
+                        <p className="font-alkalami">Login</p>
                     </div>
 
                     <div className='space-y-6 flex-col px-8 -ml-5'>
@@ -76,11 +73,11 @@ const Login: FC = () => {
                     </div>
 
                     <div className='mt-6 w-80 flex justify-center'>
-                        <Button className="w-64" variant="contained">Sign In</Button>
+                        <Button className="w-64 font-alkalamiSerif bg-primary" variant="contained">Sign In</Button>
                     </div>
 
                     <div className='mt-6 w-80 flex justify-center'>
-                        <Button href="#text-buttons">Sign Up</Button>
+                        <Button className="font-alkalamiSerif" href="#text-buttons">Sign Up</Button>
                     </div>
                 </div>
             </div>

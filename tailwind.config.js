@@ -4,7 +4,18 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    colors: {
+      primary: "#1976d2"
+    },
+    extend: {
+      fontFamily: {
+        alkalami: ['Alkalami', 'serif'],
+        alkalamiSerif: ['Alkalami', 'serif',
+          'font-family', 'Source Serif Pro', 'serif']
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ]
 }
