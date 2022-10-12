@@ -1,17 +1,20 @@
 /** @type {import('tailwindcss').Config} */
+
+// font-family: 'Alkalami', serif;
+// font-family: 'Roboto Slab', serif;
+// font-family: 'Source Serif Pro', serif;
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    colors: {
-      primary: "#1976d2"
-    },
     extend: {
       fontFamily: {
         alkalami: ['Alkalami', 'serif'],
         alkalamiSerif: ['Alkalami', 'serif',
-          'font-family', 'Source Serif Pro', 'serif']
+          'font-family', 'Source Serif Pro', 'serif'],
+        robotSlabSerif: ['Roboto Slab', 'serif'],
+        robotSlabSerifPro: ['Source Serif Pro', 'serif'],
       },
     },
   },

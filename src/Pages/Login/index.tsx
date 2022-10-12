@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react'
 import deskImage from '../../images/image-desktop.jpg';
-import { Typography, TextField, Button } from '@mui/material';
+import { TextField, Button } from '@mui/material';
 
 import IconButton from '@mui/material/IconButton';
 import OutlinedInput from '@mui/material/OutlinedInput';
@@ -73,11 +73,11 @@ const Login: FC = () => {
                     </div>
 
                     <div className='mt-6 w-80 flex justify-center'>
-                        <Button className="w-64 font-alkalamiSerif bg-primary" variant="contained">Sign In</Button>
+                        <button className="w-64 py-2 rounded-md font-robotSlabSerif bg-sky-600 text-white" >Sign In</button>
                     </div>
 
                     <div className='mt-6 w-80 flex justify-center'>
-                        <Button className="font-alkalamiSerif" href="#text-buttons">Sign Up</Button>
+                        <a className="font-robotSlabSerif text-sky-600" href="#text-buttons">Sign Up</a>
                     </div>
                 </div>
             </div>
