@@ -3,8 +3,8 @@ import Registration from './Pages/Registration';
 const App = () => {
   return (
     <div>
-      {/* <Login /> */}
-      <Registration />
+      <Login />
+      {/* <Registration /> */}
     </div>
   );
 }

@@ -37,11 +37,11 @@ const Login: FC = () => {
 
     return (
         <div className='max-h-full max-w-full'>
-            <div className='flex max-w-3xl mx-auto rounded-xl space-x-4 mt-32 bg-slate-300'>
-                <div className='w-1/2'>
-                    <img src={deskImage} className="w-full h-96 rounded-l-xl" />
+            <div className='xs:flex-col xs:w-64 flex max-w-3xl mx-auto rounded-xl space-x-4 mt-32 bg-slate-300'>
+                <div className='w-1/2 xs:w-auto'>
+                    <img src={deskImage} className="w-full h-96 rounded-l-xl xs:rounded-t-xl xs:rounded-bl-none" />
                 </div>
-                <div className='w-1/2 mt-6'>
+                <div className='w-1/2 mt-6 xs:w-auto'>
                     <div className="-ml-5 px-8 py-2 text-5xl">
                         <p className="font-alkalami">Sign In</p>
                     </div>
@@ -72,7 +72,7 @@ const Login: FC = () => {
                         </FormControl>
                     </div>
 
-                    <div className='mt-6 w-80 flex justify-center'>
+                    <div className='mt-6 w-80 flex justify-center xs:w-28'>
                         <button className="w-64 py-2 rounded-md font-robotSlabSerif bg-sky-600 text-white" >Sign In</button>
                     </div>
 

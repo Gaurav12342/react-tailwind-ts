@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
 /** @type {import('tailwindcss').Config} */
 
 // font-family: 'Alkalami', serif;
@@ -8,6 +9,10 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    screens: {
+      'xs': '375px',
+      ...defaultTheme.screens,
+    },
     extend: {
       fontFamily: {
         alkalami: ['Alkalami', 'serif'],
