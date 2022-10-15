@@ -36,17 +36,17 @@ const Login: FC = () => {
         };
 
     return (
-        <div className='max-h-full max-w-full'>
-            <div className='flex max-w-3xl mx-auto rounded-xl space-x-4 mt-32 bg-slate-300'>
-                <div className='w-1/2'>
-                    <img src={deskImage} className="w-full h-96 rounded-l-xl" />
+        <div className='max-h-full max-w-md md:max-w-full'>
+            <div className='flex flex-col max-w-3xl ml-48 -mr-32 md:mx-auto mt-1 md:mt-32 rounded-xl overflow-hidden bg-slate-300 md:flex md:flex-row'>
+                <div className='w-full md:w-1/2'>
+                    <img src={deskImage} className="w-full h-52 md:h-96" />
                 </div>
-                <div className='w-1/2 mt-4'>
-                    <div className="-ml-5 px-8 py-2 text-5xl">
+                <div className='w-full mt-2 md:mt-10 md:w-1/2'>
+                    <div className="-ml-5 px-8 py-2 text-4xl">
                         <p className="font-alkalami">Sign Up</p>
                     </div>
 
-                    <div className='space-y-4 flex-col px-8 -ml-5'>
+                    <div className='space-y-2 flex-col ml-5 mr-16 md:mx-8 md:ml-3'>
                         <TextField fullWidth id="username" label="Username" variant="outlined" />
                         <TextField fullWidth id="email" label="Email" variant="outlined" />
                         <FormControl fullWidth variant="outlined">
@@ -73,11 +73,11 @@ const Login: FC = () => {
                         </FormControl>
                     </div>
 
-                    <div className='mt-4 w-80 flex justify-center'>
+                    <div className='-ml-9 mr-4 mt-4 flex justify-center md:-ml-1'>
                         <button className="w-64 py-2 rounded-md font-robotSlabSerif bg-sky-600 text-white" >Sign Up</button>
                     </div>
 
-                    <div className='mt-4 mb-2 w-80 flex justify-center'>
+                    <div className='-ml-9 mr-4 my-4 mt-2 flex justify-center md:-ml-1'>
                         <a className="font-robotSlabSerif text-sky-600" href="#text-buttons">Sign In</a>
                     </div>
                 </div>
