@@ -9,10 +9,6 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    screens: {
-      'xs': '375px',
-      ...defaultTheme.screens,
-    },
     extend: {
       fontFamily: {
         alkalami: ['Alkalami', 'serif'],
